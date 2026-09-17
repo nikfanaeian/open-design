@@ -996,7 +996,7 @@ jobs:
             --namespace "${{ needs.metadata.outputs.linux_namespace }}"
             --portable
             --app-version "${{ needs.metadata.outputs.release_version }}"
-            --to appimage
+            --to appimage,deb
             --containerized
             --json
           )
